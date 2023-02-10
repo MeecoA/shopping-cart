@@ -38,6 +38,9 @@ const RouteSwitch = () => {
       setCart(updatedCart);
     }
   };
+  const HandleRemove = (item) => {
+    setCart(cart.filter((i) => i.item !== item));
+  };
   console.log(cart);
 
   return (
@@ -57,6 +60,7 @@ const RouteSwitch = () => {
                 cartCounter={cartCounter}
                 setCartCounter={setCartCounter}
                 HandleClick={HandleClick}
+                HandleRemove={HandleRemove}
               />
             }
           />

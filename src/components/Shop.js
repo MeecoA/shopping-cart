@@ -1,12 +1,12 @@
 import Cart from "./Cart";
-const Shop = ({ weapons, setWeapons, cart, setCart, cartCounter, setCartCounter, HandleClick }) => {
+const Shop = ({ weapons, setWeapons, cart, setCart, cartCounter, setCartCounter, HandleClick, HandleRemove }) => {
   return (
     <div className="container">
       <div className="shop-wrapper">
         <h1>weapon Shop</h1>
-        <Cart cartCounter={cartCounter} cart={cart} />
+        <Cart cartCounter={cartCounter} cart={cart} HandleClick={HandleClick} HandleRemove={HandleRemove} />
         <div className="products-container">
-          {weapons.map((weapon, index) => (
+          {weapons.map((weapon) => (
             <>
               <div
                 key={weapon.displayName}

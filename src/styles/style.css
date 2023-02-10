@@ -152,7 +152,7 @@ a {
   background: red;
   color: white;
 }
-
+/* cart */
 .modal-cart {
   position: fixed;
   top: 10%;
@@ -161,4 +161,39 @@ a {
   z-index: 1;
   background-color: white;
   overflow: scroll;
+  padding: 20px;
+}
+.items-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.cart-items {
+  background-color: black;
+  width: fit-content;
+}
+.cart-items:hover {
+}
+.quantity-container {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  width: 60%;
+  justify-content: space-between;
+}
+.add-delete {
+  display: flex;
+  width: 100px;
+  height: 30px;
+  justify-content: space-between;
+}
+.add-delete div {
+  font-size: 30px;
+}
+.ad-icon {
+}
+.ad-icon:hover {
+  transition: 0.3s;
+  scale: 1.2;
 }
