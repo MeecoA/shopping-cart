@@ -4,6 +4,10 @@ import { useState } from "react";
 
 const Cart = ({ cartCounter, cart }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const checkoutTotal = cart.reduce((acc, obj) => {
+    return acc + obj.price;
+  }, 0);
   return (
     <>
       <div className="container">
@@ -28,15 +32,17 @@ const Cart = ({ cartCounter, cart }) => {
             {cart.map((weapon) => (
               <>
                 <div key={weapon.name} defaultValue={weapon.price && weapon.price} className="product">
-                  <div className="add-cart">Add to Cart</div>
                   <div className="display-name">{weapon.name}</div>
                   <div className="image-container">
                     <img src={weapon.photo} className="product-image"></img>
                   </div>
-                  <div className="price">{weapon.price && weapon.price}</div>
+                  <div>
+                    Price: {weapon.price && weapon.price} Quantity: {weapon.quantity}
+                  </div>
                 </div>
               </>
             ))}
+            <div>Checkout: {checkoutTotal}</div>
           </div>
         )}
       </>
