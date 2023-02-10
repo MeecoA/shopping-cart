@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Shop from "./components/Shop";
+import "./styles/style.css";
 const RouteSwitch = () => {
   return (
     <>

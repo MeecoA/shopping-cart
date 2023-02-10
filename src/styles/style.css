@@ -1,0 +1,126 @@
+@import url(//db.onlinewebfonts.com/c/e7322a6673613ab13604fadda3d20e56?family=VALORANT);
+@font-face {
+  font-family: "VALORANT";
+  src: url("//db.onlinewebfonts.com/t/e7322a6673613ab13604fadda3d20e56.eot");
+  src: url("//db.onlinewebfonts.com/t/e7322a6673613ab13604fadda3d20e56.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/e7322a6673613ab13604fadda3d20e56.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/e7322a6673613ab13604fadda3d20e56.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/e7322a6673613ab13604fadda3d20e56.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/e7322a6673613ab13604fadda3d20e56.svg#VALORANT") format("svg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "VALORANT", sans-serif;
+}
+body {
+  background-image: url("/src/bg.webp");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  width: 75%;
+  margin: auto;
+}
+.logo {
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+.logo img {
+  height: 30px;
+}
+header {
+  position: fixed;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  z-index: 1;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+li {
+  list-style-type: none;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* shop page */
+.shop-wrapper {
+  padding-top: 100px;
+}
+.shop-wrapper h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+.product {
+  width: fit-content;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  cursor: pointer;
+}
+.add-cart {
+  position: absolute;
+  color: white;
+  border: 2px solid white;
+  display: none;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.product:hover .add-cart {
+  display: block;
+}
+.product:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  scale: 1.03;
+  color: white;
+}
+.product:active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.product-image {
+  height: 120px;
+  width: 360px;
+}
+.image-container {
+  width: fit-content;
+}
+.display-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+/* home */
+
+.home-content {
+  border: 1px solid black;
+  height: 100vh;
+}
