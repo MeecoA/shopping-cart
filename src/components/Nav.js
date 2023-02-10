@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "./logo.png";
-const Nav = () => {
+const Nav = ({ cartCounter }) => {
   return (
     <header>
       <div className="container">
@@ -16,6 +16,7 @@ const Nav = () => {
             <li>
               <Link to="/shop">Shop</Link>
             </li>
+            <li></li>
           </ul>
         </nav>
       </div>
