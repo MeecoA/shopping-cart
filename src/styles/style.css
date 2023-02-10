@@ -152,3 +152,12 @@ a {
   background: red;
   color: white;
 }
+
+.modal-cart {
+  position: fixed;
+  top: 10%;
+  width: 75%;
+  height: 100vh;
+  z-index: 1;
+  background-color: white;
+}
